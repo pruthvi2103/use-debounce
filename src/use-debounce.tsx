@@ -1,5 +1,11 @@
 import { useCallback } from "react";
-export const useDebounce = (delay: number | undefined, callback: Function) => {
+
+export type IUseDebounce = (
+  delay: number | undefined,
+  callback: Function
+) => (...args: any) => void;
+
+export const useDebounce: IUseDebounce = (delay, callback) => {
   const debounce = function (d: number | undefined, fn: Function) {
     let timerId: NodeJS.Timeout | null;
     return function (...args: any) {
@@ -16,5 +22,3 @@ export const useDebounce = (delay: number | undefined, callback: Function) => {
   const debouncedCallback = useCallback(debounce(delay, callback), []);
   return debouncedCallback;
 };
-
-export default useDebounce;

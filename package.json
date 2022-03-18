@@ -1,14 +1,17 @@
 {
-  "name": "@pruthvi2103/use-debounce",
-  "version": "0.0.1",
-  "author": "Pruthvi Shetty <pruthvishetty5656@gmail.com> (https://github.com/pruthvi2103)",
+  "name": "@pruthvi21/use-debounce",
+  "version": "0.0.5",
   "description": "A small simple hook for implementing debounce in react",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pruthvi2103/use-debounce.git"
+  },
   "main": "dist/use-debounce.es.js",
   "module": "dist/use-debounce.es.js",
   "types": "./src/use-debounce.d.ts",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build && tsc --emitDeclarationOnly && mv dist/src dist/types",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -23,5 +26,20 @@
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
     "vite-dts": "^1.0.4"
+  },
+  "keywords": [
+    "react",
+    "debounce",
+    "useDebounce",
+    "hooks"
+  ],
+  "author": "Pruthvi Shetty <pruthvishetty5656@gmail.com> (https://github.com/pruthvi2103)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pruthvi2103/use-debounce/issues"
+  },
+  "homepage": "https://github.com/pruthvi2103/use-debounce#readme",
+  "publishConfig": {
+    "access": "public"
   }
 }

@@ -13,10 +13,12 @@ export default defineConfig(() => ({
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
       formats: ["es"],
+      name: "@pruthvi21/use-debounce",
+      fileName: (format) => `use-debounce.${format}.js`,
     },
     rollupOptions: {
       external: isExternal,
     },
   },
-  plugins: [dts()],
+  plugins: [],
 }));
