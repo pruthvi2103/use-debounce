@@ -2,6 +2,14 @@
 
 A Small React hook that implements debouncing in react.
 
+### Install
+
+`npm i @pruthvi21/use-debounce`
+
+or
+
+`yarn add @pruthvi21/use-debounce`
+
 ### Usage
 
 ```
@@ -20,3 +28,9 @@ I'd suggest you go through this [blog](https://levelup.gitconnected.com/debounce
 Simpler TL;DR image explaination:
 
 ![Image_Explaination](https://miro.medium.com/max/1400/1*-r8hP_iDBPrj-odjIZajzw.gif)
+
+Note Package also published at github's registry
+
+See packages section
+
+`npm install @pruthvi2103/use-debounce`
