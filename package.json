@@ -1,6 +1,5 @@
 {
   "name": "@pruthvi2103/use-debounce",
-  "private": false,
   "version": "0.0.1",
   "author": "Pruthvi Shetty <pruthvishetty5656@gmail.com> (https://github.com/pruthvi2103)",
   "description": "A small simple hook for implementing debounce in react",
