@@ -1,6 +1,6 @@
 {
-  "name": "@pruthvi21/use-debounce",
-  "version": "0.0.5",
+  "name": "@pruthvi2103/use-debounce",
+  "version": "1.0.1",
   "description": "A small simple hook for implementing debounce in react",
   "repository": {
     "type": "git",
@@ -12,20 +12,28 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build && tsc --emitDeclarationOnly && mv dist/src dist/types",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/react-hooks": "^7.0.2",
+    "@testing-library/user-event": "^13.5.0",
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",
     "@vitejs/plugin-react": "^1.0.7",
+    "jsdom": "^19.0.0",
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
-    "vite-dts": "^1.0.4"
+    "vite-dts": "^1.0.4",
+    "vitest": "^0.7.4"
   },
   "keywords": [
     "react",
@@ -40,6 +48,7 @@
   },
   "homepage": "https://github.com/pruthvi2103/use-debounce#readme",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "https://npm.pkg.github.com/yourOrganizationOrAccount"
   }
 }
