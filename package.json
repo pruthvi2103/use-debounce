@@ -1,6 +1,6 @@
 {
   "name": "@pruthvi2103/use-debounce",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A small simple hook for implementing debounce in react",
   "repository": {
     "type": "git",
